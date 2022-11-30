@@ -1,0 +1,293 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: #C5E4E7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+#container {
+    height: 481px;
+    width: 920px;
+    left: 260px;
+    top: 304px;
+    border-radius: 25px;
+    background: #FFFFFF;
+    box-shadow: 0px 32px 43px rgba(79, 166, 175, 0.200735);
+    border-radius: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.section {
+    height: 417px;
+    width: 413px;
+}
+
+#right-section {
+    background: #00474B;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5%;
+}
+
+.tip-amount-total {
+    font-family: 'Space Mono';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    color: #FFFFFF;
+}
+
+.person {
+    font-family: 'Space Mono';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 13px;
+    line-height: 19px;
+    color: #7F9D9F;
+}
+
+.inp-result {
+    font-family: 'Space Mono';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 71px;
+    text-align: right;
+    letter-spacing: -1px;
+    color: #26C2AE;
+    height: 71px;
+    background: none;
+    border: none;
+    width: 100%;
+}
+
+.fullamountbox {
+    margin-right: 10%;
+    width: 70%;
+}
+
+.right-section-elements {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.tip-amount-person {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 30%;
+    margin-left: 10%;
+}
+
+#reset {
+    height: 48px;
+    width: 333px;
+    border-radius: 5px;
+    background: #0b7176;
+    margin-top: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    cursor: pointer;
+}
+
+
+#reset-text {
+    font-family: 'Space Mono';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 30px;
+    text-align: center;
+    color: #00474B;
+}
+
+
+#left-section {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+}
+
+.bill-tip-people {
+    font-family: 'Space Mono';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    color: #5E7A7D;
+    margin-bottom: 2%;
+}
+
+.bill-people {
+    background: #F3F9FA;
+    border-radius: 5px;
+    height: 48px;
+    width: 379px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.percent {
+    height: 48px;
+    width: 117px;
+    border-radius: 5px;
+    background: #00474B;
+    border: 0;
+    font-family: 'Space Mono';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 36px;
+    text-align: center;
+    color: #FFFFFF;
+    cursor: pointer;
+}
+
+#choose-percent button:hover {
+    background: #9FE8DF!important;
+}
+
+
+
+#choose-percent {
+    display: flex;
+    height: 112px;
+    flex-wrap: wrap;
+    gap: 3.5%
+}
+
+#percent-inp {
+    height: 48px;
+    width: 117px;
+    border-radius: 5px;
+    border: none;
+    background: #F3F9FA;
+    font-family: 'Space Mono';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 36px;
+    color: #547878;
+    text-align: center;
+    cursor: pointer;
+    appearance: none;
+}
+
+#percent-inp::-webkit-outer-spin-button,
+#percent-inp::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -o-appearance: none; 
+-ms-appearance: none; 
+appearance: none; 
+  margin: 0;
+}
+
+
+#percent-inp:focus { 
+    outline-color: #26C2AE;
+}
+
+.inpt {
+    width: 90%;
+    height: 90%;
+    background: none;
+    border: none;
+    text-align: right;
+    margin-right: 3%;
+    font-family: 'Space Mono';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 36px;
+    color: #547878;
+}
+
+.inpt:focus {
+    outline: none;
+}
+
+.bill-people-sign {
+    margin-left: 3%;
+    color: #9EBBBD;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+#middle-part {
+    margin-top: 11%;
+}
+
+#last-part {
+    margin-top: 11%;
+}
+
+#first-part {
+    margin-top: 2%;
+}
+
+#people-info {
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+}
+
+#not-zero {
+    font-family: 'Space Mono';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: right;
+    color: #E17457;
+    display: none;
+}
+
+#amountbox:hover {
+    border: 2px solid #26C2AE;
+    width: 375px;
+    height: 44px;
+    cursor: pointer;
+}
+
+#amount {
+    cursor: pointer;
+}
+
+#amount::-webkit-outer-spin-button,
+#amount::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -o-appearance: none; 
+-ms-appearance: none; 
+appearance: none; 
+  margin: 0;
+}
+
+#personquantity::-webkit-outer-spin-button,
+#personquantity::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -o-appearance: none; 
+-ms-appearance: none; 
+appearance: none; 
+  margin: 0;
+}
+

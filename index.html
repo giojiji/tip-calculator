@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://fonts.googleapis.com/css?family=Space Mono' rel='stylesheet'>
+    <link rel="stylesheet" href="index.css">
+    <title>Tip calculator</title>
+</head>
+<body>
+    
+<div id="container">
+    <div class="section" id="left-section">
+    <div id="first-part">
+        <h1 class="bill-tip-people">Bill</h1>
+    <div class="bill-people" id="amountbox">
+        <span class="bill-people-sign">$</span>
+        <input type="text" value="" placeholder="0" class="inpt" id="amount"  oninput="calculate(), validate(this)" onkeypress="return onlyNumberKeyy(event)">
+    </div>
+</div>
+    <div id="middle-part">
+        <h1 class="bill-tip-people">Select Tip %</h1>
+    <div id="choose-percent" >
+        <button class="percent" id="btn5">5%</button>
+        <button class="percent" id="btn10">10%</button>
+        <button class="percent" id="btn15">15%</button>
+        <button class="percent" id="btn25">25%</button>
+        <button class="percent" id="btn50">50%</button>
+        <input type="text" value="" placeholder="Custom" id="percent-inp" oninput="percent(), validate(this)"  onkeypress="return onlyNumberKeyy(event)">
+    </div>
+    <div>
+    </div>
+    <div id="last-part">
+    <div id="people-info">
+        <h1 class="bill-tip-people">Number of People</h1>
+        <h1 id="not-zero">Can’t be zero</h1>
+    </div>
+    </div>
+    <div class="bill-people" id="zerobox">
+        <span class="bill-people-sign">#</span> 
+        <input type="number" value=0 placeholder="0" class="inpt" id="personquantity" oninput="calculateperson()"   onkeypress="return onlyNumberKey(event)" disabled>
+    </div>
+</div>
+    </div>
+
+
+
+
+
+
+
+
+    <div class="section" id="right-section">
+      <div class="right-section-elements"> 
+        <div class="tip-amount-person">
+                <h1 class="tip-amount-total">Tip Amount</h1>
+                <p class="person">/ person</p>
+            </div>
+        <div class="fullamountbox">
+                <input type="text" disabled class="inp-result" value="$0.00" id="tipamount">
+            </div>
+      </div> 
+      <div class="right-section-elements"> 
+        <div class="tip-amount-person">
+                <h1 class="tip-amount-total">Total</h1>
+                <p class="person">/ person</p>
+            </div>
+        <div class="fullamountbox">
+               <input type="text" disabled class="inp-result"  value="$0.00" id="totaltipamount">
+            </div>
+        </div> 
+        <button id="reset" onclick="resetamount()">
+            <h1 id="reset-text">RESET</h1>
+        </button>
+    </div>
+
+
+    <script src="index.js"></script>
+</body>
+</html>
